@@ -10,37 +10,35 @@ class FizzBuzzChallengeTest {
     @Test
     void fizzBuzzTest() {
 
-        assertEquals("FIZZBUZZ!", FizzBuzzChallenge.FizzBuzz(15));
+        assertEquals("FIZZBUZZ!", FizzBuzzChallenge.fizzBuzz(15));
 
     }
 
     @Test
     void fizzTest() {
 
-        assertEquals("Fizz", FizzBuzzChallenge.FizzBuzz(3));
+        assertEquals("Fizz", FizzBuzzChallenge.fizzBuzz(3));
 
     }
 
     @Test
     void buzzTest() {
 
-        assertEquals("Buzz", FizzBuzzChallenge.FizzBuzz(5));
+        assertEquals("Buzz", FizzBuzzChallenge.fizzBuzz(5));
 
     }
 
     @Test
     void zeroTest() {
 
-        assertEquals("", FizzBuzzChallenge.FizzBuzz(0));
+        assertEquals("", FizzBuzzChallenge.fizzBuzz(0));
 
     }
 
     @Test
     void normalNumberTest() {
 
-        assertNotEquals("FIZZBUZZ!", FizzBuzzChallenge.FizzBuzz(7));
-
-
+        assertNotEquals("FIZZBUZZ!", FizzBuzzChallenge.fizzBuzz(7));
 
     }
 
